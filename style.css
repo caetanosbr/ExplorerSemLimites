@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background: #F9F4FB;
+}
+
+#page {
+  width: 100vw;
+}
+
+header {
+  height: 836px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding-bottom: 103.64px;
+}
+
+.reader-img img {
+  padding-right:29.64px;
+  height: 732.36px;
+}
+
+.box h1{
+  padding: 312px 28px 0 0;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 73px;
+  color: #B52184;
+}
+ 
+.box p { 
+  padding: 0 30px 136px 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.box button {
+  border: none;
+  margin:0 523.41px 136px 109px;
+  background: #F9F4FB;
+}
+
+.box button:hover {
+  cursor: pointer;
+}
+
+main .cards{
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  display: flex;
+  flex-direction:row;
+  gap: 60px;
+
+  padding: 64px 111px;
+}
+
+main .card {
+  background: 
+  #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 24px; 
+
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+
+  padding: 32px;
+}
+
+.card img {
+  padding-bottom: 8px;
+  width: 97px;
+  height: 97px;
+}
+
+.card h2 {
+  padding-bottom: 24px;
+
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 42px;
+
+  color: #B52184;
+}
+
+.card p{
+  font-weight: 600;
+  font-size: 19.3811px;
+  line-height: 24px;
+
+  color: #312D64;
+}
+
+.fielset {
+  display: flex;
+  justify-content: space-between;
+  height: 611px;
+}
+
+.form {
+  height: 612px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 95px 0 0 109px;
+}
+
+.form h2 {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 53px;
+
+  color: #B52184;
+  padding:0 330px 35px 0;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.post input {
+  border: 1.5px solid #312D64;
+  border-radius: 16px;
+
+  align-items: center;
+  padding: 12px 16px 12px 45px;
+  gap: 12px;
+
+  width: 580px;
+  color: #312D64;
+}
+
+.post input::placeholder {
+  font-size: 1rem;
+  line-height: 100%;
+  color: #312D64;
+}
+
+.post input, textarea {
+  font-size: 1rem;
+  color: #312D64;
+}
+
+.post textarea {
+  border: 1.5px solid #312D64;
+  border-radius: 1rem;
+  align-items: flex-start;
+  padding: 12px 16px 16px;
+  gap: 10px;
+  width: 580px;
+  height: 126px;
+  color: #312D64;
+}
+
+.message-text textarea::placeholder {
+  font-family: 'Mulish';
+  font-size: 16px;
+  line-height: 140%;
+  color: #312D64;
+}
+
+.input-text img{
+  display: flex;
+  flex-direction: column;
+  margin-top: -32px;
+  margin-left: 14px;
+}
+
+.post button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: 151px;
+  height: 45px;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  border-radius: 16px;
+}
+
+.post button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background: #1d0fe9;
+}
+
+.post button p {
+  color: #FFFFFF;
+}
+
+.star {
+  display: flex;
+  justify-content: end;
+}
+
+.star img {
+  height: 612px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  height: 78px;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 19.3811px;
+  line-height: 24px;
+  color: #FFFFFF; 
+}
+
+@media (max-width:768px) {
+
+  header {
+    height: 679px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reader-img img {
+    height: 370px;
+    padding: 0 33px 0;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 17px 40px 5px 40px;
+  }
+  
+  .box p {
+    padding: 0 40px 35px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+   .box button {
+    margin:0;
+    padding-bottom: 93px;
+  }
+
+  main .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .cards {
+    display: flex;
+    flex-direction: column;
+    padding: 52px 39px 55px 39px;
+    gap: 49px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card h2 {
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 37px;
+  }
+
+  .card p {
+    font-weight: 600;
+    font-size: 16.0416px;
+    line-height: 20px;
+  }
+  
+  .fielset {
+    height: 565px; 
+  }
+
+  .form {
+    padding: 0;
+  }
+
+  .form h2 {
+    padding: 78px 40px 35px 40px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .post {
+    width: 100%;
+    padding: 0 40px 35px 40px;
+  }
+
+  .post textarea, .post input {
+    width: 100%;
+  }
+
+  .star {
+    display: none;
+  }
+}
